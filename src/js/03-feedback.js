@@ -10,8 +10,7 @@ form.addEventListener("submit", throttle(onFormSubmit, 500));
 form.addEventListener("input", e => {
   formData[e.target.name] = e.target.value;
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(formData));
-  console.log(formData);
-});
+  });
 
 
 function onFormSubmit(event) {
